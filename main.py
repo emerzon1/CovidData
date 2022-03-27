@@ -5,10 +5,10 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn import preprocessing
 
-covid = pandas.read_csv('datas/us-counties-recent.csv', sep=',')
+covid = pandas.read_csv('datasets/us-counties-recent.csv', sep=',')
 covid = covid.get(['fips', 'cases', 'deaths'])
 
-population = pandas.read_csv('datas/county_complete.csv', sep=',').get(
+population = pandas.read_csv('datasets/county_complete.csv', sep=',').get(
     ['fips', 'pop2017', 'median_household_income_2017'])
 
 
